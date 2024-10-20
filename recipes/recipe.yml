@@ -72,7 +72,7 @@ modules:
       - brave.com
   - type: script
     snippets:
-      - "ln -sf /usr/lib/opt/brave.com/brave-browser /usr/bin/brave-browser-stable"
+      - "ln -sf /usr/lib/opt/brave.com/brave/brave-browser /usr/bin/brave-browser-stable"
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
