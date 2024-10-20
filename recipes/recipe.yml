@@ -62,6 +62,7 @@ modules:
       - zsh
       - brave-browser
       - celluloid
+      - fastfetch
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
@@ -69,6 +70,9 @@ modules:
       - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
     optfix:
       - brave.com
+  - type: script
+    snippets:
+      - "ln -sf /usr/lib/opt/brave.com/brave-browser /usr/bin/brave-browser-stable"
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
