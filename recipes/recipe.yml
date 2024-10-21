@@ -40,6 +40,7 @@ modules:
       - hyprpolkitagent
       - hyprprop
       - gammastep
+      - gammastep-indicator
       - hyprutils
       - waybar-git
       - rofi-wayland
@@ -70,6 +71,12 @@ modules:
       - seahorse
       - adw-gtk3-theme
       - paper-icon-theme
+      - libvirt-daemon-kvm
+      - qemu-kvm
+      - libvirt-daemon-config-network
+      - virt-install
+      - virt-manager
+      - virt-viewer
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
