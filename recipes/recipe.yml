@@ -71,6 +71,7 @@ modules:
       - seahorse
       - adw-gtk3-theme
       - paper-icon-theme
+      - sddm-wayland-generic
       - libvirt-daemon-kvm
       - qemu-kvm
       - libvirt-daemon-config-network
