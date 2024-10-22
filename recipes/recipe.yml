@@ -52,6 +52,7 @@ modules:
       - polkit-gnome
       - trash-cli
       - wl-clipboard
+      - cliphist
       - pavucontrol
       - mpv
       - pipx
@@ -71,7 +72,6 @@ modules:
       - seahorse
       - adw-gtk3-theme
       - paper-icon-theme
-      - sddm-wayland-sway
       - libvirt-daemon-kvm
       - qemu-kvm
       - libvirt-daemon-config-network
@@ -97,6 +97,7 @@ modules:
       repo-name: flathub
       repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
       install:
+        - it.mijorus.gearlever
       # Flatpak runtimes are not supported (like org.winehq.Wine//stable-23.08),
       # only normal flatpak applications are (like Floorp Lightning web browser in this example).
       # Installing different branches of the same Flatpak is not supported.
