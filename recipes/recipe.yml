@@ -87,6 +87,13 @@ modules:
       - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
     optfix:
       - brave.com
+
+  - type: systemd
+    system:
+      enabled:
+        - greetd-boot.service
+        - greetd.service
+
   - type: script
     snippets:
       - "ln -sf /usr/lib/opt/brave.com/brave/brave-browser /usr/bin/brave-browser-stable"
