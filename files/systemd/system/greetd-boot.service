@@ -4,12 +4,12 @@
 # 	- https://github.com/ublue-os/main/issues/224#issuecomment-1987851271
 
 [Unit]
-Description=Create SDDM user on system boot
+Description=Create greetd user on system boot
 Before=greetd.service
 
 [Service]
 Type=oneshot
-ExecStart=/usr/etc/sddm/greetd-useradd
+ExecStart=/usr/etc/greetd/greetd-useradd
 RemainAfterExit=yes
 
 [Install]
